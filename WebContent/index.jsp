@@ -4,9 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Welcome</title>
+<title>Insert title here</title>
 </head>
 <body>
-<%= "Welcome- "+request.getParameter("uname") %>  
+<%! int data=50; %>  
+<%= "Value of the variable is:"+data %>  
+
+<br>
+<%!   
+int cube(int n){  
+return n*n*n;  
+}  
+%>  
+<%= "Cube of 3 is:"+cube(3) %>  
 </body>
 </html>
