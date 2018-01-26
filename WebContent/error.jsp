@@ -4,18 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Welcome</title>
+<title>Insert title here</title>
 </head>
 <body>
-<% 
-
-String name=request.getParameter("uname");  
-out.print("Welcome "+name);  
+<%@ page isErrorPage="true" %>  
   
-pageContext.setAttribute("user",name,PageContext.SESSION_SCOPE);  
+<h3>Sorry an exception occured!</h3>  
   
-%>
-
-<a href="second.jsp">second jsp page</a>  
+Exception is: <%= exception %> 
 </body>
 </html>
