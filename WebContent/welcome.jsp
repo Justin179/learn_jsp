@@ -7,6 +7,15 @@
 <title>Welcome</title>
 </head>
 <body>
-<%= "Welcome- "+request.getParameter("uname") %>  
+<% 
+
+out.print("Welcome "+request.getParameter("uname"));  
+%>
+<br>
+<%
+String driver=application.getInitParameter("dname");  
+out.print("driver name is="+driver);  
+
+%>  
 </body>
 </html>
