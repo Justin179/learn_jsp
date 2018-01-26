@@ -4,18 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Welcome</title>
+<title>Insert title here</title>
 </head>
 <body>
-<% 
-
-String name=request.getParameter("uname");  
-out.print("Welcome "+name);  
+<%   
   
-session.setAttribute("user",name);  
+String name=(String)session.getAttribute("user");  
+out.print("Hello "+name);  
   
-%>
-
-<a href="second.jsp">second jsp page</a>  
+%>  
 </body>
 </html>
